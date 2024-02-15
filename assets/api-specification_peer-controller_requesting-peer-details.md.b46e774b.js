@@ -1,0 +1,41 @@
+import{_ as s,o as n,c as a,Q as p}from"./chunks/framework.c4d6cd72.js";const g=JSON.parse('{"title":"Requesting peer details","description":"","frontmatter":{},"headers":[],"relativePath":"api-specification/peer-controller/requesting-peer-details.md","filePath":"api-specification/peer-controller/requesting-peer-details.md"}'),l={name:"api-specification/peer-controller/requesting-peer-details.md"},o=p(`<h1 id="requesting-peer-details" tabindex="-1">Requesting peer details <a class="header-anchor" href="#requesting-peer-details" aria-label="Permalink to &quot;Requesting peer details&quot;">​</a></h1><p><strong>Protocol</strong>: <code>HTTP</code></p><p><strong>Encoding</strong>: <code>JSON</code></p><p><strong>Endpoint</strong>: <code>/data/api/v1/peer-management/details</code></p><p><strong>Method</strong>: <code>GET</code></p><p><strong>Parameters</strong>: —</p><p><strong>Input/request structure</strong>:</p><p>A <code>GET</code> request to the endpoint.</p><p><strong>Output/response structure</strong>:</p><details class="details custom-block"><summary>Show</summary><div class="language-json5 vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">json5</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">{</span></span>
+<span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#9ECBFF;">status</span><span style="color:#E1E4E8;">: {</span></span>
+<span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#9ECBFF;">code</span><span style="color:#E1E4E8;">: </span><span style="color:#79B8FF;">0</span><span style="color:#E1E4E8;">, </span><span style="color:#6A737D;">//integer($int32)</span></span>
+<span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#9ECBFF;">name</span><span style="color:#E1E4E8;">: </span><span style="color:#9ECBFF;">&#39;string&#39;</span><span style="color:#E1E4E8;">,</span></span>
+<span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#9ECBFF;">message</span><span style="color:#E1E4E8;">: </span><span style="color:#9ECBFF;">&#39;string&#39;</span></span>
+<span class="line"><span style="color:#E1E4E8;">  },</span></span>
+<span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#9ECBFF;">data</span><span style="color:#E1E4E8;">: {</span></span>
+<span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#9ECBFF;">accountId</span><span style="color:#E1E4E8;">: </span><span style="color:#9ECBFF;">&#39;string&#39;</span><span style="color:#E1E4E8;">,</span></span>
+<span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#9ECBFF;">domainId</span><span style="color:#E1E4E8;">: </span><span style="color:#9ECBFF;">&#39;string&#39;</span><span style="color:#E1E4E8;">,</span></span>
+<span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#9ECBFF;">accountMetadata</span><span style="color:#E1E4E8;">: {</span></span>
+<span class="line"><span style="color:#E1E4E8;">      </span><span style="color:#9ECBFF;">additionalProp1</span><span style="color:#E1E4E8;">: {},</span></span>
+<span class="line"><span style="color:#E1E4E8;">      </span><span style="color:#9ECBFF;">additionalProp2</span><span style="color:#E1E4E8;">: {},</span></span>
+<span class="line"><span style="color:#E1E4E8;">      </span><span style="color:#9ECBFF;">additionalProp3</span><span style="color:#E1E4E8;">: {}</span></span>
+<span class="line"><span style="color:#E1E4E8;">    },</span></span>
+<span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#9ECBFF;">domainMetadata</span><span style="color:#E1E4E8;">: {</span></span>
+<span class="line"><span style="color:#E1E4E8;">      </span><span style="color:#9ECBFF;">additionalProp1</span><span style="color:#E1E4E8;">: {},</span></span>
+<span class="line"><span style="color:#E1E4E8;">      </span><span style="color:#9ECBFF;">additionalProp2</span><span style="color:#E1E4E8;">: {},</span></span>
+<span class="line"><span style="color:#E1E4E8;">      </span><span style="color:#9ECBFF;">additionalProp3</span><span style="color:#E1E4E8;">: {}</span></span>
+<span class="line"><span style="color:#E1E4E8;">    }</span></span>
+<span class="line"><span style="color:#E1E4E8;">  }</span></span>
+<span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">{</span></span>
+<span class="line"><span style="color:#24292E;">  </span><span style="color:#032F62;">status</span><span style="color:#24292E;">: {</span></span>
+<span class="line"><span style="color:#24292E;">    </span><span style="color:#032F62;">code</span><span style="color:#24292E;">: </span><span style="color:#005CC5;">0</span><span style="color:#24292E;">, </span><span style="color:#6A737D;">//integer($int32)</span></span>
+<span class="line"><span style="color:#24292E;">    </span><span style="color:#032F62;">name</span><span style="color:#24292E;">: </span><span style="color:#032F62;">&#39;string&#39;</span><span style="color:#24292E;">,</span></span>
+<span class="line"><span style="color:#24292E;">    </span><span style="color:#032F62;">message</span><span style="color:#24292E;">: </span><span style="color:#032F62;">&#39;string&#39;</span></span>
+<span class="line"><span style="color:#24292E;">  },</span></span>
+<span class="line"><span style="color:#24292E;">  </span><span style="color:#032F62;">data</span><span style="color:#24292E;">: {</span></span>
+<span class="line"><span style="color:#24292E;">    </span><span style="color:#032F62;">accountId</span><span style="color:#24292E;">: </span><span style="color:#032F62;">&#39;string&#39;</span><span style="color:#24292E;">,</span></span>
+<span class="line"><span style="color:#24292E;">    </span><span style="color:#032F62;">domainId</span><span style="color:#24292E;">: </span><span style="color:#032F62;">&#39;string&#39;</span><span style="color:#24292E;">,</span></span>
+<span class="line"><span style="color:#24292E;">    </span><span style="color:#032F62;">accountMetadata</span><span style="color:#24292E;">: {</span></span>
+<span class="line"><span style="color:#24292E;">      </span><span style="color:#032F62;">additionalProp1</span><span style="color:#24292E;">: {},</span></span>
+<span class="line"><span style="color:#24292E;">      </span><span style="color:#032F62;">additionalProp2</span><span style="color:#24292E;">: {},</span></span>
+<span class="line"><span style="color:#24292E;">      </span><span style="color:#032F62;">additionalProp3</span><span style="color:#24292E;">: {}</span></span>
+<span class="line"><span style="color:#24292E;">    },</span></span>
+<span class="line"><span style="color:#24292E;">    </span><span style="color:#032F62;">domainMetadata</span><span style="color:#24292E;">: {</span></span>
+<span class="line"><span style="color:#24292E;">      </span><span style="color:#032F62;">additionalProp1</span><span style="color:#24292E;">: {},</span></span>
+<span class="line"><span style="color:#24292E;">      </span><span style="color:#032F62;">additionalProp2</span><span style="color:#24292E;">: {},</span></span>
+<span class="line"><span style="color:#24292E;">      </span><span style="color:#032F62;">additionalProp3</span><span style="color:#24292E;">: {}</span></span>
+<span class="line"><span style="color:#24292E;">    }</span></span>
+<span class="line"><span style="color:#24292E;">  }</span></span>
+<span class="line"><span style="color:#24292E;">}</span></span></code></pre></div></details><h3 id="responses" tabindex="-1">Responses <a class="header-anchor" href="#responses" aria-label="Permalink to &quot;Responses&quot;">​</a></h3><table><thead><tr><th>Response Code</th><th>Description</th></tr></thead><tbody><tr><td><code>200</code></td><td>Peer details have been retrieved successfully.</td></tr><tr><td><code>404</code></td><td>User/domain/account/asset not found.</td></tr><tr><td><code>500</code></td><td>Internal server error.</td></tr></tbody></table>`,12),e=[o];function t(r,c,E,i,y,d){return n(),a("div",null,e)}const u=s(l,[["render",t]]);export{g as __pageData,u as default};
